@@ -28,20 +28,20 @@ This project addresses the need for structured healthcare data analysis by using
 
 The dataset consists of five interrelated CSV files, each representing a core component of brain tumour healthcare analytics:
 
-# 1) Patients: 
-Demographics, tumor type, diagnosis date, hospital, country
+Patients: 
+  Demographics, tumor type, diagnosis date, hospital, country
 
-# 2) Imaging: 
-MRI-based tumor volume, radiomic score, contrast enhancement
+Imaging: 
+  MRI-based tumor volume, radiomic score, contrast enhancement
 
-# 3) Genomics: 
-MGMT methylation, EGFR status, IDH status, TMB, immune biomarker score
+Genomics: 
+  MGMT methylation, EGFR status, IDH status, TMB, immune biomarker score
 
-# 4) Treatments: 
-Treatment type, treatment response, survival duration
+Treatments: 
+  Treatment type, treatment response, survival duration
 
-# 5) Clinical Trials: 
-Trial enrollment status, trial phase, and outcomes
+Clinical Trials: 
+  Trial enrollment status, trial phase, and outcomes
 
 Each table contains approximately 1000 records, enabling realistic, large-scale analytical scenarios.
 
@@ -49,13 +49,14 @@ Each table contains approximately 1000 records, enabling realistic, large-scale 
 
 The database follows a relational schema where the Patients table acts as the central entity:
 
-# Patients (Primary Key: patient_id)
-# One-to-Many → Imaging
-# One-to-One → Genomics
-# One-to-Many → Treatments
-# One-to-Many → Clinical_Trials
+  Patients (Primary Key: patient_id)
+  One-to-Many → Imaging
+  One-to-One → Genomics
+  One-to-Many → Treatments
+  One-to-Many → Clinical_Trials
 
-All tables are linked using patient_id as the foreign key, ensuring data integrity and supporting complex JOIN-based analytics. The complete database schema and table definitions are available in schema.sql.
+All tables are linked using patient_id as the foreign key, ensuring data integrity and supporting complex JOIN-based analytics. 
+The complete database schema and table definitions are available in schema.sql.
 
 # 6. Analytical Objectives :
 
@@ -131,25 +132,25 @@ This project demonstrates strong proficiency in advanced SQL concepts, including
 
 Applying advanced SQL queries, joins, and window functions on the dataset produces the following insights:
 
-# Tumor-wise Survival Patterns
-Glioblastoma (GBM) patients exhibit significantly lower survival durations compared to low-grade tumors such as meningioma and pituitary tumors, highlighting the aggressive nature of GBM.
+Tumor-wise Survival Patterns
+    * Glioblastoma (GBM) patients exhibit significantly lower survival durations compared to low-grade tumors such as meningioma and pituitary tumors, highlighting the aggressive nature of GBM.
 
-# Treatment Effectiveness
-Patients receiving immunotherapy or targeted therapies demonstrate improved average survival compared to single-modality treatments such as chemotherapy.
+Treatment Effectiveness
+    * Patients receiving immunotherapy or targeted therapies demonstrate improved average survival compared to single-modality treatments such as chemotherapy.
 
-# Biomarker Impact
-Higher immune biomarker scores and favorable genomic markers (e.g., MGMT methylation and IDH mutation) are associated with better survival outcomes, supporting precision-medicine approaches.
+Biomarker Impact
+    * Higher immune biomarker scores and favorable genomic markers (e.g., MGMT methylation and IDH mutation) are associated with better survival outcomes, supporting precision-medicine approaches.
 
-# Imaging-Based Prognosis
-Lower tumor volume and higher radiomic scores correlate with better clinical outcomes, emphasizing the prognostic value of advanced imaging features.
+Imaging-Based Prognosis
+    * Lower tumor volume and higher radiomic scores correlate with better clinical outcomes, emphasizing the prognostic value of advanced imaging features.
 
-# Clinical Trial Participation
-Trial-enrolled patients show measurable differences in survival trends, underscoring the importance of research-driven treatment strategies.
+Clinical Trial Participation
+    * Trial-enrolled patients show measurable differences in survival trends, underscoring the importance of research-driven treatment strategies.
 
-# Hospital-Level Variations
-Survival outcomes and treatment distributions vary across hospitals, enabling institutional performance and care-pattern analysis.
+Hospital-Level Variations
+    * Survival outcomes and treatment distributions vary across hospitals, enabling institutional performance and care-pattern analysis.
 
-    These insights demonstrate how structured healthcare data can be transformed into meaningful clinical and      research intelligence using SQL-based analytics.
+These insights demonstrate how structured healthcare data can be transformed into meaningful clinical and research intelligence using SQL-based analytics.
 
 # 9. Technology Stack :
 
@@ -183,10 +184,11 @@ It does not contain real patient data and must not be used for clinical decision
 
 This project represents a complete end-to-end SQL analytics workflow, from schema design to advanced analytical querying, and is suitable for both academic evaluation and professional portfolios.
 
-# **Author:** PUSKAR SARKAR 
-# **Domain:** Healthcare & Biomedical Analytics 
-# **github:** https://github.com/Puskar-2002 
+# Author: PUSKAR SARKAR 
+# Domain: Healthcare & Biomedical Analytics 
+# github: https://github.com/Puskar-2002 
 
+****************************************************************************************************************************************************************************************************************************
 
 
 
